@@ -1,0 +1,825 @@
+@font-face {
+	font-family: 'Telegrafico';
+	src: url(Telegrafico.ttf);
+}
+@font-face {
+	font-family: 'Impregnable';
+	src: url(Impregnable.ttf);
+}
+
+			
+body, html{
+	height:100%;
+	margin:0px;
+	padding: 0px;
+	color:#777;
+	background-color:#263340;
+	max-width: 100%;
+    
+    position:relative;
+}	
+html{
+	overflow-x: hidden;
+}		
+
+#titlu{
+	font-family: 'Lobster';
+	font-size: 150%;
+}
+			
+.navbar-inverse .navbar-nav > li > a {
+	font-family: 'Comfortaa';
+	font-size:120%;
+}
+		
+.backg-1{
+	position: relative;
+	
+	background-attachment: fixed;
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow: hidden;
+}
+.backg-1{
+	background-image:url("../poze/bg1.png");
+	min-height: 100%;			
+}
+
+a{
+	transition: .3s color;
+}
+a:hover{
+	color: #777;
+}
+p{
+	color: #dbe7eb; 
+	font-family:'Quattrocento';
+	font-size: 140%;
+	padding: 2% 2%;
+}
+
+@media (max-width: 991px) {
+	.navbar-header {
+		float: none;
+	}
+	.navbar-toggle {
+		display: block;
+	}
+	.navbar-collapse {
+		border-top: 1px solid transparent;
+		box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+	}
+	.navbar-collapse.collapse {
+		display: none!important;
+	}
+	.navbar-nav {
+		float: none!important;
+		margin: 7.5px -15px;
+	}
+	.navbar-nav>li {
+		float: none;
+	}
+	.navbar-nav>li>a {
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	.navbar-text {
+		float: none;
+		margin: 15px 0;
+	}
+	.navbar-collapse.collapse.in { 
+		display: block!important;
+	}
+	.collapsing {
+		overflow: hidden!important;
+	}
+}
+.caption{
+	position: absolute;	
+	left: 0;
+	top: 50%;
+	width: 100%;
+	text-align: center;
+
+}
+.caption span.border {
+	font-family:'Oswald';
+	letter-spacing: 8px;
+    color: #081a29;
+    padding: 18px;
+    font-size: 50px;
+}
+
+.hawk{
+	width:960px;
+	height: 1020px;
+	position:absolute;
+	background-image: url("../poze/hawk.png");
+	background-repeat:no-repeat;
+	background-position:left bottom;
+	right: 50%;
+	margin-right: -130px; 	
+	top: 30px;
+	}
+
+.text{
+	opacity: 0;
+	transform: translateX(-40px);
+	transition: all 0.5s ease-in-out;
+	font-size: 130%; 
+}
+
+.slide{
+	opacity: 1;
+	transform: translateX(0px);
+
+}
+
+h2{
+	color: #dbe7eb;
+	border-bottom: 2px solid rgba(219, 231, 235, 0.5);
+	padding-bottom: 10px; 
+	font-family:'Oswald';
+	text-align:center;
+	margin-bottom: 30px;
+	letter-spacing: 7px; 
+	
+}
+
+h3{
+	color: #fff;
+	border-bottom: 1px solid rgba(219, 231, 235, 0.5);
+	padding-bottom: 8px; 
+	font-family:'Open Sans';
+	text-align:center;
+	margin-bottom: 15px;
+	letter-spacing: 4px; 
+	display: inline-block;
+	font-size:130%;
+}
+
+blockquote{
+	color: #dbe7eb;
+	font-family:'Quattrocento';
+	border-left: 3px solid #bdd3db;
+	font-size: 110%;
+}
+/*Spatiu gol*/
+
+.gol{
+	width: 100%;
+	height: 10000px;
+}
+
+/*Sageti cu scroll*/
+
+.glyph{
+width: 7%;
+margin: auto;
+position: absolute;
+bottom: 0;
+left:0;
+right:0;
+
+}
+.itemg{
+width: 60%;
+height: 20%;
+text-align: center;
+margin-bottom: 20%;
+}
+.container span{
+top: 50%;
+margin-top: -25%;
+font-size: 350%;
+line-height: 150px;
+}
+.itemg a{
+	padding: 0px;
+	display: inline-block;
+	text-decoration: none;
+	
+}
+.glyphicon{
+	color: #fff;
+	animation: shake 1s infinite;
+	font-size: 200%;
+	padding: 10px;
+	transform: translateY(-2px);
+}
+
+@keyframes shake{	
+	50%  {transform: translateY(2px);}	
+}
+
+/*Ferestre circulare*/
+
+.cage1{
+	width:15%;
+	position: absolute;
+	top: 25%;
+	margin-top: -5%; 
+	left: 5%;
+
+}
+.cage2{
+	width:36%;
+	left: 50%;
+	top: 50%;
+	margin-top: -18%;
+	margin-left: -18%;
+	position: absolute;
+}
+.cage3{
+	width:15%;
+	position: absolute;
+	top: 25%;
+	margin-top: -5%; 
+	right: 5%;
+
+}
+
+.cage4{
+	width:15%;
+	position: absolute;
+	bottom: 25%;
+	margin-bottom: -5%; 
+	left: 5%;
+}
+
+.cage5{
+	width:15%;
+	position: absolute;
+	bottom: 25%;
+	margin-bottom: -5%; 
+	right: 5%;
+
+}
+
+.circle1, .circle2, .circle3, .circle4, .circle5 {
+position: relative;
+background: no-repeat fixed; 
+  background-size: contain;
+background-position: contain;
+top:50%;
+width: : 100%;
+padding-top: 100%;
+box-shadow: inset 0px 0px 2px 3px rgba(26, 26, 26,0.4);
+border:2px solid rgba(26, 26, 26,0.5);
+border: 3px solid yellow;
+}
+
+.circle1{
+	background-image: url("../poze/istorie/vas.jpg");
+}
+
+.circle2{
+	background-image: url("../poze/slanic.jpg");
+	
+}
+
+.circle3{
+	background-image: url("../poze/istorie/monezi.jpg");
+}
+
+.circle4{
+	background-image: url("../poze/costum-popular/costum.jpg");
+}
+
+.circle5{
+	background-image: url("../poze/manastirea-gavanu/gavanu.jpg");
+}
+
+
+
+#hartaBuzau {
+        height:400px;
+        width:100%;
+		margin: 10% 0%;
+        border: 7px solid #f6f2ee;
+        box-shadow: 0px 0px 25px 15px rgba(26, 26, 26,0.7);
+    }
+    .gm-style-iw * {
+        display: block;
+        width: 100%;
+    }
+    .gm-style-iw h4, .gm-style-iw p {
+        margin: 0;
+        padding: 0;
+    }
+    .gm-style-iw a {
+        color: #4272db;
+    }
+
+/*Casrusel informatii*/
+
+
+.slide1{
+	background:url("../poze/relief-bazin/culmea-ivanetu-2.jpg");
+	-ms-animation: galerie-foc 15s infinite linear;
+	-webkit-animation: galerie-ivanetu 15s infinite linear;
+	-o-animation: galerie-ivanetu 15s infinite linear;
+	-moz-animation: galerie-ivanetu 15s infinite linear;
+	animation: galerie-ivanetu 15s infinite linear;
+}
+.slide2{
+	background:url("../poze/relief-bazin/muntii-furu.jpg");
+	-ms-animation: galerie-foc 15s infinite linear;
+	-webkit-animation: galerie-furu 15s infinite linear;
+	-o-animation: galerie-furu 15s infinite linear;
+	-moz-animation: galerie-furu 15s infinite linear;
+	animation: galerie-furu 15s infinite linear;
+}
+.slide3{
+	background:url("../poze/relief-bazin/saratel.jpg");
+	-ms-animation: galerie-foc 15s infinite linear;
+	-webkit-animation: galerie-saratel 15s infinite linear;
+	-o-animation: galerie-saratel 15s infinite linear;
+	-moz-animation: galerie-saratel 15s infinite linear;
+	animation: galerie-saratel 15s infinite linear;
+}
+.slide4{
+	background:url("../poze/relief-bazin/boc.jpg");
+}
+/*.slide5{
+	background:url("../poze/relief-bazin/culmea-ivanetu.jpg");
+}
+.slide6{
+	background:url("../poze/relief-bazin/culmea-ivanetu.jpg");
+}*/
+.slide7{
+	background:url("../poze/Grunj/grunj.jpg");
+	background-position: top;
+	-ms-animation: galerie-foc 15s infinite linear;
+	-webkit-animation: galerie-grunj 15s infinite linear;
+	-o-animation: galerie-grunj 15s infinite linear;
+	-moz-animation: galerie-grunj 15s infinite linear;
+	animation: galerie-grunj 15s infinite linear;
+}
+.slide8{
+	background:url("../poze/meledic/meledic.jpg");
+	-ms-animation: galerie-foc 15s infinite linear;
+	-webkit-animation: galerie-meledic 15s infinite linear;
+	-o-animation: galerie-meledic 15s infinite linear;
+	-moz-animation: galerie-meledic 15s infinite linear;
+	animation: galerie-meledic 15s infinite linear;
+}
+.slide9{
+	background:url("../poze/mocearu/mocearu.jpg");
+	-ms-animation: galerie-foc 15s infinite linear;
+	-webkit-animation: galerie-mocearu 15s infinite linear;
+	-o-animation: galerie-mocearu 15s infinite linear;
+	-moz-animation: galerie-mocearu 15s infinite linear;
+	animation: galerie-mocearu 15s infinite linear;
+}
+.slide10{
+	background:url("../poze/focul-viu/focul-viu.jpg");
+	background-position: bottom center;
+	-ms-animation: galerie-foc 15s infinite linear;
+	-webkit-animation: galerie-foc 15s infinite linear;
+	-o-animation: galerie-foc 15s infinite linear;
+	-moz-animation: galerie-foc 15s infinite linear;
+	animation: galerie-foc 15s infinite linear;
+	
+
+}
+.slide1, .slide2, .slide3, .slide4, .slide5, .slide6, .slide7, .slide8, .slide9, .slide10{
+		
+		height: 60vh;
+		background-repeat: no-repeat;
+		background-size:cover;
+		background-position: center;
+
+}
+.carousel{
+	width: 70%;
+	margin: auto;
+}
+.carousel-caption{
+	background-color: rgba(0,0,0,0.2);
+	left: 0%;
+	right:0%;
+	bottom:0%;
+	width: 100%;
+	min-height: 100%;
+	text-shadow: 1px 2px 3px #666;
+
+}
+.carousel-caption p{
+	font-size: 3vmin;
+	padding: 0% 20% 2% 20%;
+	text-align: justify;
+	text-align-last: center;
+	color: white;
+}
+.carousel-caption h3{
+	font-size: 5vmin;
+}
+
+
+@keyframes galerie-ivanetu{
+
+	0% {background-image:url("../poze/relief-bazin/culmea-ivanetu.jpg");}
+	19% {background-image:url("../poze/relief-bazin/culmea-ivanetu.jpg");}
+	20% {background-image:url("../poze/relief-bazin/culmea-ivanetu-1.jpg");}	
+	39% {background-image:url("../poze/relief-bazin/culmea-ivanetu-1.jpg");}
+	40% {background-image:url("../poze/relief-bazin/culmea-ivanetu-2.jpg");}	
+	59% {background-image:url("../poze/relief-bazin/culmea-ivanetu-2.jpg");}
+	60% {background-image:url("../poze/relief-bazin/culmea-ivanetu-3.jpg");}
+	79% {background-image:url("../poze/relief-bazin/culmea-ivanetu-3.jpg");}
+	80% {background-image:url("../poze/relief-bazin/culmea-ivanetu-4.jpg");}
+	99% {background-image:url("../poze/relief-bazin/culmea-ivanetu-4.jpg");}
+	100% {background-image:url("../poze/relief-bazin/culmea-ivanetu.jpg");}
+}
+
+@keyframes galerie-furu{
+
+	0% {background-image:url("../poze/relief-bazin/muntii-furu.jpg");}	
+	19% {background-image:url("../poze/relief-bazin/muntii-furu.jpg");}
+	20% {background-image:url("../poze/relief-bazin/muntii-furu-1.jpg");}	
+	39% {background-image:url("../poze/relief-bazin/muntii-furu-1.jpg");}
+	40% {background-image:url("../poze/relief-bazin/muntii-furu-2.jpg");}	
+	59% {background-image:url("../poze/relief-bazin/muntii-furu-2.jpg");}
+	60% {background-image:url("../poze/relief-bazin/muntii-furu-3.jpg");}	
+	79% {background-image:url("../poze/relief-bazin/muntii-furu-3.jpg");}
+	80% {background-image:url("../poze/relief-bazin/muntii-furu-4.png");}
+	99% {background-image:url("../poze/relief-bazin/muntii-furu-4.png");}
+	100% {background-image:url("../poze/relief-bazin/muntii-furu.jpg");}
+}
+
+@keyframes galerie-saratel{
+
+	0% {background-image:url("../poze/relief-bazin/saratel.jpg");}	
+	19% {background-image:url("../poze/relief-bazin/saratel.jpg");}
+	20% {background-image:url("../poze/relief-bazin/saratel-1.jpg");}	
+	39% {background-image:url("../poze/relief-bazin/saratel-1.jpg");}
+	40% {background-image:url("../poze/relief-bazin/saratel-2.jpg");}	
+	59% {background-image:url("../poze/relief-bazin/saratel-2.jpg");}
+	60% {background-image:url("../poze/relief-bazin/saratel-3.jpg");}	
+	79% {background-image:url("../poze/relief-bazin/saratel-3.jpg");}
+	80% {background-image:url("../poze/relief-bazin/saratel-4.jpg");}	
+	99% {background-image:url("../poze/relief-bazin/saratel-4.jpg");}
+	100% {background-image:url("../poze/relief-bazin/saratel.jpg");}
+}
+
+@keyframes galerie-meledic{
+
+	0% {background-image:url("../poze/meledic/meledic.jpg");}	
+	19% {background-image:url("../poze/meledic/meledic.jpg");}
+	20% {background-image:url("../poze/meledic/meledic-1.jpg");}	
+	39% {background-image:url("../poze/meledic/meledic-1.jpg");}
+	40% {background-image:url("../poze/meledic/meledic-2.jpg");}	
+	59% {background-image:url("../poze/meledic/meledic-2.jpg");}
+	60% {background-image:url("../poze/meledic/meledic-3.jpg");}	
+	79% {background-image:url("../poze/meledic/meledic-3.jpg");}
+	80% {background-image:url("../poze/meledic/meledic-4.jpg");}	
+	99% {background-image:url("../poze/meledic/meledic-4.jpg");}
+	100% {background-image:url("../poze/meledic/meledic.jpg");}
+}
+
+@keyframes galerie-mocearu{
+
+	0% {background-image:url("../poze/mocearu/mocearu.jpg");}	
+	19% {background-image:url("../poze/mocearu/mocearu.jpg");}
+	20% {background-image:url("../poze/mocearu/mocearu-1.jpg");}	
+	39% {background-image:url("../poze/mocearu/mocearu-1.jpg");}
+	40% {background-image:url("../poze/mocearu/mocearu-2.jpg");}	
+	59% {background-image:url("../poze/mocearu/mocearu-2.jpg");}
+	60% {background-image:url("../poze/mocearu/mocearu-3.jpg");}	
+	79% {background-image:url("../poze/mocearu/mocearu-3.jpg");}
+	80% {background-image:url("../poze/mocearu/mocearu-4.jpg");}	
+	99% {background-image:url("../poze/mocearu/mocearu-4.jpg");}
+	100% {background-image:url("../poze/mocearu/mocearu.jpg");}
+}
+
+@keyframes galerie-foc{
+
+	0% {background-image:url("../poze/focul-viu/focul-viu.jpg");}	
+	19% {background-image:url("../poze/focul-viu/focul-viu.jpg");}
+	20% {background-image:url("../poze/focul-viu/focul-viu-1.jpg");}
+	39% {background-image:url("../poze/focul-viu/focul-viu-1.jpg");}
+	40% {background-image:url("../poze/focul-viu/focul-viu-2.jpg");}
+	59% {background-image:url("../poze/focul-viu/focul-viu-2.jpg");}
+	60% {background-image:url("../poze/focul-viu/focul-viu-3.jpg");}
+	79% {background-image:url("../poze/focul-viu/focul-viu-3.jpg");}
+	80% {background-image:url("../poze/focul-viu/focul-viu-4.jpg");}
+	99% {background-image:url("../poze/focul-viu/focul-viu-4.jpg");}
+	100% {background-image:url("../poze/focul-viu/focul-viu.jpg");}
+}
+
+@-webkit-keyframes galerie-furu{
+
+	0% {background-image:url("../poze/relief-bazin/muntii-furu.jpg");}	
+	19% {background-image:url("../poze/relief-bazin/muntii-furu.jpg");}
+	20% {background-image:url("../poze/relief-bazin/muntii-furu-1.jpg");}	
+	39% {background-image:url("../poze/relief-bazin/muntii-furu-1.jpg");}
+	40% {background-image:url("../poze/relief-bazin/muntii-furu-2.jpg");}	
+	59% {background-image:url("../poze/relief-bazin/muntii-furu-2.jpg");}
+	60% {background-image:url("../poze/relief-bazin/muntii-furu-3.jpg");}	
+	79% {background-image:url("../poze/relief-bazin/muntii-furu-3.jpg");}
+	80% {background-image:url("../poze/relief-bazin/muntii-furu-4.png");}
+	99% {background-image:url("../poze/relief-bazin/muntii-furu-4.png");}
+	100% {background-image:url("../poze/relief-bazin/muntii-furu.jpg");}
+}
+
+@-webkit-keyframes galerie-saratel{
+
+	0% {background-image:url("../poze/relief-bazin/saratel.jpg");}	
+	19% {background-image:url("../poze/relief-bazin/saratel.jpg");}
+	20% {background-image:url("../poze/relief-bazin/saratel-1.jpg");}	
+	39% {background-image:url("../poze/relief-bazin/saratel-1.jpg");}
+	40% {background-image:url("../poze/relief-bazin/saratel-2.jpg");}	
+	59% {background-image:url("../poze/relief-bazin/saratel-2.jpg");}
+	60% {background-image:url("../poze/relief-bazin/saratel-3.jpg");}	
+	79% {background-image:url("../poze/relief-bazin/saratel-3.jpg");}
+	80% {background-image:url("../poze/relief-bazin/saratel-4.jpg");}	
+	99% {background-image:url("../poze/relief-bazin/saratel-4.jpg");}
+	100% {background-image:url("../poze/relief-bazin/saratel.jpg");}
+}
+
+@-webkit-keyframes galerie-meledic{
+
+	0% {background-image:url("../poze/meledic/meledic.jpg");}	
+	19% {background-image:url("../poze/meledic/meledic.jpg");}
+	20% {background-image:url("../poze/meledic/meledic-1.jpg");}	
+	39% {background-image:url("../poze/meledic/meledic-1.jpg");}
+	40% {background-image:url("../poze/meledic/meledic-2.jpg");}	
+	59% {background-image:url("../poze/meledic/meledic-2.jpg");}
+	60% {background-image:url("../poze/meledic/meledic-3.jpg");}	
+	79% {background-image:url("../poze/meledic/meledic-3.jpg");}
+	80% {background-image:url("../poze/meledic/meledic-4.jpg");}	
+	99% {background-image:url("../poze/meledic/meledic-4.jpg");}
+	100% {background-image:url("../poze/meledic/meledic.jpg");}
+}
+
+@-webkit-keyframes galerie-mocearu{
+
+	0% {background-image:url("../poze/mocearu/mocearu.jpg");}	
+	19% {background-image:url("../poze/mocearu/mocearu.jpg");}
+	20% {background-image:url("../poze/mocearu/mocearu-1.jpg");}	
+	39% {background-image:url("../poze/mocearu/mocearu-1.jpg");}
+	40% {background-image:url("../poze/mocearu/mocearu-2.jpg");}	
+	59% {background-image:url("../poze/mocearu/mocearu-2.jpg");}
+	60% {background-image:url("../poze/mocearu/mocearu-3.jpg");}	
+	79% {background-image:url("../poze/mocearu/mocearu-3.jpg");}
+	80% {background-image:url("../poze/mocearu/mocearu-4.jpg");}	
+	99% {background-image:url("../poze/mocearu/mocearu-4.jpg");}
+	100% {background-image:url("../poze/mocearu/mocearu.jpg");}
+}
+
+@-webkit-keyframes galerie-grunj{
+
+	0% {background-image:url("../poze/Grunj/grunj.jpg");}
+	19% {background-image:url("../poze/Grunj/grunj.jpg");}
+	20% {background-image:url("../poze/Grunj/grunj-1.jpg");}	
+	39% {background-image:url("../poze/Grunj/grunj-1.jpg");}
+	40% {background-image:url("../poze/Grunj/grunj-2.jpg");}	
+	59% {background-image:url("../poze/Grunj/grunj-2.jpg");}
+	60% {background-image:url("../poze/Grunj/grunj-3.jpg");}	
+	79% {background-image:url("../poze/Grunj/grunj-3.jpg");}
+	80% {background-image:url("../poze/Grunj/grunj-4.jpg");}	
+	99% {background-image:url("../poze/Grunj/grunj-4.jpg");}
+	100% {background-image:url("../poze/Grunj/grunj.jpg");}
+}
+
+@-webkit-keyframes galerie-foc{
+
+	0% {background-image:url("../poze/focul-viu/focul-viu.jpg");}	
+	19% {background-image:url("../poze/focul-viu/focul-viu.jpg");}
+	20% {background-image:url("../poze/focul-viu/focul-viu-1.jpg");}
+	39% {background-image:url("../poze/focul-viu/focul-viu-1.jpg");}
+	40% {background-image:url("../poze/focul-viu/focul-viu-2.jpg");}
+	59% {background-image:url("../poze/focul-viu/focul-viu-2.jpg");}
+	60% {background-image:url("../poze/focul-viu/focul-viu-3.jpg");}
+	79% {background-image:url("../poze/focul-viu/focul-viu-3.jpg");}
+	80% {background-image:url("../poze/focul-viu/focul-viu-4.jpg");}
+	99% {background-image:url("../poze/focul-viu/focul-viu-4.jpg");}
+	100% {background-image:url("../poze/focul-viu/focul-viu.jpg");}
+}
+
+@-moz-keyframes galerie-ivanetu{
+
+	0% {background-image:url("../poze/relief-bazin/culmea-ivanetu.jpg");}
+	19% {background-image:url("../poze/relief-bazin/culmea-ivanetu.jpg");}
+	20% {background-image:url("../poze/relief-bazin/culmea-ivanetu-1.jpg");}	
+	39% {background-image:url("../poze/relief-bazin/culmea-ivanetu-1.jpg");}
+	40% {background-image:url("../poze/relief-bazin/culmea-ivanetu-2.jpg");}	
+	59% {background-image:url("../poze/relief-bazin/culmea-ivanetu-2.jpg");}
+	60% {background-image:url("../poze/relief-bazin/culmea-ivanetu-3.jpg");}
+	79% {background-image:url("../poze/relief-bazin/culmea-ivanetu-3.jpg");}
+	80% {background-image:url("../poze/relief-bazin/culmea-ivanetu-4.jpg");}
+	99% {background-image:url("../poze/relief-bazin/culmea-ivanetu-4.jpg");}
+	100% {background-image:url("../poze/relief-bazin/culmea-ivanetu.jpg");}
+}
+
+@-moz-keyframes galerie-furu{
+
+	0% {background-image:url("../poze/relief-bazin/muntii-furu.jpg");}	
+	19% {background-image:url("../poze/relief-bazin/muntii-furu.jpg");}
+	20% {background-image:url("../poze/relief-bazin/muntii-furu-1.jpg");}	
+	39% {background-image:url("../poze/relief-bazin/muntii-furu-1.jpg");}
+	40% {background-image:url("../poze/relief-bazin/muntii-furu-2.jpg");}	
+	59% {background-image:url("../poze/relief-bazin/muntii-furu-2.jpg");}
+	60% {background-image:url("../poze/relief-bazin/muntii-furu-3.jpg");}	
+	79% {background-image:url("../poze/relief-bazin/muntii-furu-3.jpg");}
+	80% {background-image:url("../poze/relief-bazin/muntii-furu-4.png");}
+	99% {background-image:url("../poze/relief-bazin/muntii-furu-4.png");}
+	100% {background-image:url("../poze/relief-bazin/muntii-furu.jpg");}
+}
+
+@-moz-keyframes galerie-saratel{
+
+	0% {background-image:url("../poze/relief-bazin/saratel.jpg");}	
+	19% {background-image:url("../poze/relief-bazin/saratel.jpg");}
+	20% {background-image:url("../poze/relief-bazin/saratel-1.jpg");}	
+	39% {background-image:url("../poze/relief-bazin/saratel-1.jpg");}
+	40% {background-image:url("../poze/relief-bazin/saratel-2.jpg");}	
+	59% {background-image:url("../poze/relief-bazin/saratel-2.jpg");}
+	60% {background-image:url("../poze/relief-bazin/saratel-3.jpg");}	
+	79% {background-image:url("../poze/relief-bazin/saratel-3.jpg");}
+	80% {background-image:url("../poze/relief-bazin/saratel-4.jpg");}	
+	99% {background-image:url("../poze/relief-bazin/saratel-4.jpg");}
+	100% {background-image:url("../poze/relief-bazin/saratel.jpg");}
+}
+
+@-moz-keyframes galerie-meledic{
+
+	0% {background-image:url("../poze/meledic/meledic.jpg");}	
+	19% {background-image:url("../poze/meledic/meledic.jpg");}
+	20% {background-image:url("../poze/meledic/meledic-1.jpg");}	
+	39% {background-image:url("../poze/meledic/meledic-1.jpg");}
+	40% {background-image:url("../poze/meledic/meledic-2.jpg");}	
+	59% {background-image:url("../poze/meledic/meledic-2.jpg");}
+	60% {background-image:url("../poze/meledic/meledic-3.jpg");}	
+	79% {background-image:url("../poze/meledic/meledic-3.jpg");}
+	80% {background-image:url("../poze/meledic/meledic-4.jpg");}	
+	99% {background-image:url("../poze/meledic/meledic-4.jpg");}
+	100% {background-image:url("../poze/meledic/meledic.jpg");}
+}
+
+@-moz-keyframes galerie-mocearu{
+
+	0% {background-image:url("../poze/mocearu/mocearu.jpg");}	
+	19% {background-image:url("../poze/mocearu/mocearu.jpg");}
+	20% {background-image:url("../poze/mocearu/mocearu-1.jpg");}	
+	39% {background-image:url("../poze/mocearu/mocearu-1.jpg");}
+	40% {background-image:url("../poze/mocearu/mocearu-2.jpg");}	
+	59% {background-image:url("../poze/mocearu/mocearu-2.jpg");}
+	60% {background-image:url("../poze/mocearu/mocearu-3.jpg");}	
+	79% {background-image:url("../poze/mocearu/mocearu-3.jpg");}
+	80% {background-image:url("../poze/mocearu/mocearu-4.jpg");}	
+	99% {background-image:url("../poze/mocearu/mocearu-4.jpg");}
+	100% {background-image:url("../poze/mocearu/mocearu.jpg");}
+}
+
+@-moz-keyframes galerie-foc{
+
+	0% {background-image:url("../poze/focul-viu/focul-viu.jpg");}	
+	19% {background-image:url("../poze/focul-viu/focul-viu.jpg");}
+	20% {background-image:url("../poze/focul-viu/focul-viu-1.jpg");}
+	39% {background-image:url("../poze/focul-viu/focul-viu-1.jpg");}
+	40% {background-image:url("../poze/focul-viu/focul-viu-2.jpg");}
+	59% {background-image:url("../poze/focul-viu/focul-viu-2.jpg");}
+	60% {background-image:url("../poze/focul-viu/focul-viu-3.jpg");}
+	79% {background-image:url("../poze/focul-viu/focul-viu-3.jpg");}
+	80% {background-image:url("../poze/focul-viu/focul-viu-4.jpg");}
+	99% {background-image:url("../poze/focul-viu/focul-viu-4.jpg");}
+	100% {background-image:url("../poze/focul-viu/focul-viu.jpg");}
+}
+
+@-ms-keyframes galerie-ivanetu{
+
+	0% {background-image:url("../poze/relief-bazin/culmea-ivanetu.jpg");}
+	19% {background-image:url("../poze/relief-bazin/culmea-ivanetu.jpg");}
+	20% {background-image:url("../poze/relief-bazin/culmea-ivanetu-1.jpg");}	
+	39% {background-image:url("../poze/relief-bazin/culmea-ivanetu-1.jpg");}
+	40% {background-image:url("../poze/relief-bazin/culmea-ivanetu-2.jpg");}	
+	59% {background-image:url("../poze/relief-bazin/culmea-ivanetu-2.jpg");}
+	60% {background-image:url("../poze/relief-bazin/culmea-ivanetu-3.jpg");}
+	79% {background-image:url("../poze/relief-bazin/culmea-ivanetu-3.jpg");}
+	80% {background-image:url("../poze/relief-bazin/culmea-ivanetu-4.jpg");}
+	99% {background-image:url("../poze/relief-bazin/culmea-ivanetu-4.jpg");}
+	100% {background-image:url("../poze/relief-bazin/culmea-ivanetu.jpg");}
+}
+
+@-ms-keyframes galerie-furu{
+
+	0% {background-image:url("../poze/relief-bazin/muntii-furu.jpg");}	
+	19% {background-image:url("../poze/relief-bazin/muntii-furu.jpg");}
+	20% {background-image:url("../poze/relief-bazin/muntii-furu-1.jpg");}	
+	39% {background-image:url("../poze/relief-bazin/muntii-furu-1.jpg");}
+	40% {background-image:url("../poze/relief-bazin/muntii-furu-2.jpg");}	
+	59% {background-image:url("../poze/relief-bazin/muntii-furu-2.jpg");}
+	60% {background-image:url("../poze/relief-bazin/muntii-furu-3.jpg");}	
+	79% {background-image:url("../poze/relief-bazin/muntii-furu-3.jpg");}
+	80% {background-image:url("../poze/relief-bazin/muntii-furu-4.png");}
+	99% {background-image:url("../poze/relief-bazin/muntii-furu-4.png");}
+	100% {background-image:url("../poze/relief-bazin/muntii-furu.jpg");}
+}
+
+@-ms-keyframes galerie-saratel{
+
+	0% {background-image:url("../poze/relief-bazin/saratel.jpg");}	
+	19% {background-image:url("../poze/relief-bazin/saratel.jpg");}
+	20% {background-image:url("../poze/relief-bazin/saratel-1.jpg");}	
+	39% {background-image:url("../poze/relief-bazin/saratel-1.jpg");}
+	40% {background-image:url("../poze/relief-bazin/saratel-2.jpg");}	
+	59% {background-image:url("../poze/relief-bazin/saratel-2.jpg");}
+	60% {background-image:url("../poze/relief-bazin/saratel-3.jpg");}	
+	79% {background-image:url("../poze/relief-bazin/saratel-3.jpg");}
+	80% {background-image:url("../poze/relief-bazin/saratel-4.jpg");}	
+	99% {background-image:url("../poze/relief-bazin/saratel-4.jpg");}
+	100% {background-image:url("../poze/relief-bazin/saratel.jpg");}
+}
+
+@-ms-keyframes galerie-meledic{
+
+	0% {background-image:url("../poze/meledic/meledic.jpg");}	
+	19% {background-image:url("../poze/meledic/meledic.jpg");}
+	20% {background-image:url("../poze/meledic/meledic-1.jpg");}	
+	39% {background-image:url("../poze/meledic/meledic-1.jpg");}
+	40% {background-image:url("../poze/meledic/meledic-2.jpg");}	
+	59% {background-image:url("../poze/meledic/meledic-2.jpg");}
+	60% {background-image:url("../poze/meledic/meledic-3.jpg");}	
+	79% {background-image:url("../poze/meledic/meledic-3.jpg");}
+	80% {background-image:url("../poze/meledic/meledic-4.jpg");}	
+	99% {background-image:url("../poze/meledic/meledic-4.jpg");}
+	100% {background-image:url("../poze/meledic/meledic.jpg");}
+}
+
+@-ms-keyframes galerie-mocearu{
+
+	0% {background-image:url("../poze/mocearu/mocearu.jpg");}	
+	19% {background-image:url("../poze/mocearu/mocearu.jpg");}
+	20% {background-image:url("../poze/mocearu/mocearu-1.jpg");}	
+	39% {background-image:url("../poze/mocearu/mocearu-1.jpg");}
+	40% {background-image:url("../poze/mocearu/mocearu-2.jpg");}	
+	59% {background-image:url("../poze/mocearu/mocearu-2.jpg");}
+	60% {background-image:url("../poze/mocearu/mocearu-3.jpg");}	
+	79% {background-image:url("../poze/mocearu/mocearu-3.jpg");}
+	80% {background-image:url("../poze/mocearu/mocearu-4.jpg");}	
+	99% {background-image:url("../poze/mocearu/mocearu-4.jpg");}
+	100% {background-image:url("../poze/mocearu/mocearu.jpg");}
+}
+
+@-ms-keyframes galerie-foc{
+
+	0% {background-image:url("../poze/focul-viu/focul-viu.jpg");}	
+	19% {background-image:url("../poze/focul-viu/focul-viu.jpg");}
+	20% {background-image:url("../poze/focul-viu/focul-viu-1.jpg");}
+	39% {background-image:url("../poze/focul-viu/focul-viu-1.jpg");}
+	40% {background-image:url("../poze/focul-viu/focul-viu-2.jpg");}
+	59% {background-image:url("../poze/focul-viu/focul-viu-2.jpg");}
+	60% {background-image:url("../poze/focul-viu/focul-viu-3.jpg");}
+	79% {background-image:url("../poze/focul-viu/focul-viu-3.jpg");}
+	80% {background-image:url("../poze/focul-viu/focul-viu-4.jpg");}
+	99% {background-image:url("../poze/focul-viu/focul-viu-4.jpg");}
+	100% {background-image:url("../poze/focul-viu/focul-viu.jpg");}
+}
+
+.container .row, .col{
+	border: 2px solid red;
+}
+
+.container .col .row{
+	height: 25%;
+}
+
+.margele{
+  width: 100%;
+  height: 100px;
+  position: relative;
+}
+
+.ata,
+.bilute {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.ata{
+	background:url("../poze/ata.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-bottom: 100px;
+}
+
+.bilute img{
+	width: 8%;
+	position: absolute;
+}
+
+.bilute img:nth-child(1){
+	margin: 8% 0% 10% 10%;
+}
+.bilute img:nth-child(2){
+	margin: 8% 0% 10% 10%;
+	
+}
+.bilute img:nth-child(3){
+	
+}
